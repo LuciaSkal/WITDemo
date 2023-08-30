@@ -1,0 +1,32 @@
+<template>
+    <div class="container">
+        <lightning-layout horizontal-align="center" class="x-large">
+            <lightning-layout-item flexibility="auto" padding="around-small">
+                <div class="custom-box1">
+                    <h2>Ahoj</h2>
+                    <lightning-input
+                        placeholder="prosim napis tvoje jméno"
+                        value={name}
+                        onchange={handleChange}
+                ></lightning-input>    
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+
+        <lightning-layout vertical-align="center" horizontal-align="center" class="x-large">
+            <lightning-layout-item flexibility="auto" padding="around-small">
+                <div class="custom-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4vDQQbqfj9XCFu4WtyfgkShwdeJ1KQweN4A&usqp=CAU" alt="WIT logo">   
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+
+        <lightning-layout vertical-align="center" horizontal-align="center" class="x-large">
+            <lightning-layout-item flexibility="auto" padding="around-small">
+                <div class="custom-box">
+                    <p>Vítej na WIT Speeddating, {name}!</p>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>       
+    </div>
+</template>

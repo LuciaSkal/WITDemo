@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>hello</members>
+        <members>welcome</members>
+        <name>LightningComponentBundle</name>
+    </types>
+        <types>
+        <members>Home_WIT</members>
+        <name>CustomTab</name>
+    </types>
+    <version>58.0</version>
+</Package>

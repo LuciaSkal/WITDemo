@@ -3,11 +3,24 @@
     <types>
         <members>hello</members>
         <members>welcome</members>
+        <members>navigateToContactListView</members>
         <name>LightningComponentBundle</name>
     </types>
         <types>
         <members>Home_WIT</members>
         <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Contact.Contact_List_View</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>WIT_Demo_UtilityBar</members>
+        <name>Flexipage</name>
+    </types>
+    <types>
+        <members>Test_screen_flow</members>
+        <name>Flow</name>
     </types>
     <version>58.0</version>
 </Package>

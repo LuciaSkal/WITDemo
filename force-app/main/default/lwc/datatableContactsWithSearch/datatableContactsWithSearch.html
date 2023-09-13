@@ -1,0 +1,29 @@
+<template>      
+    <lightning-card title="Search for contacts" icon-name="custom:custom63">  
+        <div class="slds-m-around_medium"> 
+            <div class="search slds-m-around_medium">
+                <lightning-input class="slds-m-right_medium" type="search" label="Search Contact" onchange={handleSearch}></lightning-input>
+                <lightning-button     
+                    label="Go to Recent Contacts list"
+                    class="slds-var-m-top_large"
+                    onclick={navigateToList}>
+                </lightning-button>
+            </div> 
+            <div class="slds-m-around_medium">
+                <template if:true={availableContacts}>      
+                    <lightning-datatable
+                        key-field="Id"
+                        data={availableContacts}
+                        columns={columns}
+                        hide-checkbox-column="true"
+                        show-row-number-column="true"
+                        >
+                    </lightning-datatable>  
+                </template>   
+            </div>   
+            <template if:true={error}>  
+                {error}>                  
+            </template>  
+        </div>  
+    </lightning-card>
+</template>

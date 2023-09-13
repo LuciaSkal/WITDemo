@@ -32,3 +32,8 @@ p {
     padding: 1rem;
     display: flex;
 }
+
+a {
+    size: 10rem;
+    color: crimson;
+}
